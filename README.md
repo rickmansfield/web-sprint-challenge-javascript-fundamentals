@@ -29,13 +29,40 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+**Answer**
+   - .forEach() iterates over every item and executes your function once for each array element. i.e. it doesn't necessarily return anything it just calls the given function for each element. 
+   - .map() does something to every element, returns new array, bascially converts data. The main difference is .map() does "return" values and hence a new array the same "size." 
+
 2. Explain the difference between a callback and a higher order function.
+
+**Answer** 
+- Higher Order Functions (HOF's) take or combine other functions inside themselves. By taking one or more arguments as arugument(s) it can use other functions to accomplish a new task. 
+- Callback on the other hand is passed into the HOF. It doesn't take other fucntions in as arguments. 
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+**Answer** 
+- Closure is when a function reaches up (in scope) from the child to parent or outside itself to retrive variable values. In the counter function used variables supplied elsewhere. 
+ function counterMaker() {
+    let count = 0;
+    return function counter() {
+     return count++;
+    }
+  }
+  here the function counter reaches up to function counterMaker for the count. i.e. where closure occurs. 
+
 4. Describe the four principles of the 'this' keyword.
 
+**Answer**
+- __Window Binding,__ if you don't define it then you get the whole window back. i.e. you need to give context to the deffinition to "this" otherwise it will return the window, the global object, in node or undefined in 'strict' mode.
+- __Implicit Binding__ - 80% of the time binding is implicit. It's when a function is invoked you can look to the left of the dot to determine where "this" is binding. 
+- __Explicit Binding__ used with .bind() (immediately invokes), .call()(invokes later). The argument is "explicitly" bound to "this"
+- __New Binding__ used with the "new" keyword. 
+
 5. Why do we need super() in an extended class?
+
+**Answer**
+- super is how we call a constructor properties and other methods of the parent class. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
