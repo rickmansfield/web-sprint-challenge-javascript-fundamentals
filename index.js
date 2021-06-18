@@ -250,10 +250,10 @@ class CubeMaker extends CuboidMaker{
     super(atts);
   }
   volume(){
-    return ((this.length)^3); 
+    return (Math.pow(this.length,3)); 
   }
   surfaceArea(){
-    return (6 * ((this.length)^2));
+    return (6 * (Math.pow(this.length,2)));
   }
 }
 
