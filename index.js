@@ -77,9 +77,15 @@ console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    const namesLowerCase = [];
+    array.map(function(item){
+      namesLowerCase.push(item.animal_name.toLowerCase());
+    });
+    return namesLowerCase;
   }
+
+  console.log('Topic 1 Request 2:', lowerCaseNames(zooAnimals));
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
