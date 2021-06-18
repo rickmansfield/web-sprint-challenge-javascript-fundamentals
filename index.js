@@ -68,7 +68,7 @@ const zooAnimals = [
     return habitats;
   }
 
-console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
+console.log(`Topic 2 Request 1 .forEach():`, animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -85,7 +85,7 @@ console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
     return namesLowerCase;
   }
 
-  console.log('Topic 1 Request 2:', lowerCaseNames(zooAnimals));
+  console.log('Topic 2 Request 2:', lowerCaseNames(zooAnimals));
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -94,8 +94,10 @@ console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
   */
 
   function lowPopulationAnimals(array){
-    const lowPops = [];
+    return(array.filter(item => item.population < 5));
   }
+
+  console.log('Topic 2 Request 3:', lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
