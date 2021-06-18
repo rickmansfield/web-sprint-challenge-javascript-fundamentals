@@ -106,9 +106,13 @@ console.log(`Topic 2 Request 1 .forEach():`, animalNames(zooAnimals));
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(array){
+    return array.reduce((acc, item) => {
+      return acc + item.population;
+    }, 0);
   }
+  console.log('Topic 2 Request 4:', USApop(zooAnimals));
+
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
