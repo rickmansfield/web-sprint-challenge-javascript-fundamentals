@@ -79,7 +79,7 @@ console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
 
   function lowerCaseNames(array){
     const namesLowerCase = [];
-    array.map(function(item){
+    array.map(item => {
       namesLowerCase.push(item.animal_name.toLowerCase());
     });
     return namesLowerCase;
@@ -93,8 +93,8 @@ console.log(`Request 1 .forEach():`, animalNames(zooAnimals));
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(array){
+    const lowPops = [];
   }
   
 
