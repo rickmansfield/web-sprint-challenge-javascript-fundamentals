@@ -6,23 +6,24 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the sprint challenge. 
+You are not allowed to collaborate during the sprint challenge.
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
-
 ## Introduction
 
-The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks 
+The index.js file contains all of your challenges. Please review it in full before answering the questions. If you complete the stretch goals please leave them in your file but commented out so that they do not affect the MVP tasks
 
-In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results 
+In meeting the minimum viable product (MVP) specifications listed below, you should have all tests passing. You can console.log to check your work and ensure you are submitting the correct results
 
 ### Commits
 
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead as the evaluate your solution.
 
 ## Interview Questions
+
 ### (please edit this file and write your answer below each question. In addition, you may also review these questions with your mentor)
+
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
@@ -30,41 +31,46 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
 **Answer**
-   - .forEach() iterates over every item and executes your function once for each array element. i.e. it doesn't necessarily return anything it just calls the given function for each element. 
-   - .map() does something to every element, returns new array, bascially converts data. The main difference is .map() does "return" values and hence a new array the same "size." 
+
+- .forEach() iterates over every item and executes your function once for each array element. i.e. it doesn't necessarily return anything it just calls the given function for each element.
+- .map() does something to every element, returns new array, bascially converts data. The main difference is .map() does "return" values and hence a new array the same "size."
 
 2. Explain the difference between a callback and a higher order function.
 
-**Answer** 
-- Higher Order Functions (HOF's) take or combine other functions inside themselves. By taking one or more arguments as arugument(s) it can use other functions to accomplish a new task. 
-- Callback on the other hand is passed into the HOF. It doesn't take other fucntions in as arguments. 
+**Answer**
 
-3. Can you explain what a closure is and how you used it in the counter function? 
+- Higher Order Functions (HOF's) take or combine other functions inside themselves. By taking one or more arguments as arugument(s) it can use other functions to accomplish a new task.
+- Callback on the other hand is passed into the HOF. It doesn't take other fucntions in as arguments.
 
-**Answer** 
-- Closure is when a function reaches up (in scope) from the child to parent or outside itself to retrive variable values. In the counter function used variables supplied elsewhere. 
+3. Can you explain what a closure is and how you used it in the counter function?
+
+**Answer**
+
+- Closure is when a function reaches up (in scope) from the child to parent or outside itself to retrive variable values. In the counter function used variables supplied elsewhere.
  function counterMaker() {
     let count = 0;
     return function counter() {
      return count++;
     }
   }
-  here the function counter reaches up to function counterMaker for the count. i.e. where closure occurs. 
+  here the function counter reaches up to function counterMaker for the count. i.e. where closure occurs.
 
 4. Describe the four principles of the 'this' keyword.
 
 **Answer**
+
 - __Window Binding,__ if you don't define it then you get the whole window back. i.e. you need to give context to the deffinition to "this" otherwise it will return the window, the global object, in node or undefined in 'strict' mode.
-- __Implicit Binding__ - 80% of the time binding is implicit. It's when a function is invoked you can look to the left of the dot to determine where "this" is binding. 
+- __Implicit Binding__ - 80% of the time binding is implicit. It's when a function is invoked you can look to the left of the dot to determine where "this" is binding.
 - __Explicit Binding__ used with .bind() (immediately invokes), .call()(invokes later). The argument is "explicitly" bound to "this"
-- __New Binding__ used with the "new" keyword. 
+- __New Binding__ used with the "new" keyword.
 
 5. Why do we need super() in an extended class?
 
 **Answer**
-- super is how we call a constructor properties and other methods of the parent class. 
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+- super is how we call a constructor properties and other methods of the parent class.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -86,31 +92,38 @@ Your finished project must include all of the following requirements
 
 #### Task A: Closure
 
-This challenge takes a look at closures as well as scope. 
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+This challenge takes a look at closures as well as scope.
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task B: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+- [ ] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* Find this challenge in the index.js file. Read the instructions carefully!
+- Find this challenge in the index.js file. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Task 3: Stretch Goals 
+### Task 3: Stretch Goals
 
-There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit 
+There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements! Please remember to comment out your stretch goals before you submit
 
 ## Submission format
 
-See Canvas for submission instructions 
+See Canvas for submission instructions
 
+
+## Note the difference between parameters and arguments:
+
+  - unction parameters are the names listed in the function's definition. Function arguments are the real values passed to the function. Parameters are initialized to the values of the arguments supplied.
+
+## HOF
+  - One of the characteristics of JavaScript that makes it well-suited for functional programming is the fact that it can accept higher-order functions. A higher-order function is a function that can take another function as an argument, or that returns a function as a result.
