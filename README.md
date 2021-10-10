@@ -126,4 +126,12 @@ See Canvas for submission instructions
   - unction parameters are the names listed in the function's definition. Function arguments are the real values passed to the function. Parameters are initialized to the values of the arguments supplied.
 
 ## HOF
-  - One of the characteristics of JavaScript that makes it well-suited for functional programming is the fact that it can accept higher-order functions. A higher-order function is a function that can take another function as an argument, or that returns a function as a result.
+  - JavaScript functions are executed in the sequence they are called.Not in the sequence they are defined. Hence, One of the characteristics of JavaScript that makes it well-suited for functional programming is the fact that it can accept higher-order functions. A higher-order function is a function that can take another function as an argument, or that returns a function as a result.
+
+## ARGUMENT vs. PARAMETER
+
+- parameters are the placeholders inside the fuctions. Arguments are the actual values that replace the parameter/placeholder. 
+## Callback (function)
+
+- As per MDN: A callback function is a function passed into the HOF (another function) as an argument, which is then invoked inside the outer function to complete some kind of routine or action usually "later." Callbacks help solve the synchronicity problems associated with data base queries. Rather than wait on one function call to finish before the desired function call executes we use "callbacks." A promise is returned in some cases. 
+- [examples](https://dotnettutorials.net/lesson/javascript-callback-functions/#:~:text=Javascript%20Callback%20vs%20Closure%201%20The%20callback%20is,gets%20called%20back%20to%20the%20calling%20scope.%20)
